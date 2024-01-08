@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{1743BCB9-DB24-49CA-B54A-EB895D959351}">
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{030BE293-0C91-4B61-B47A-664CDED274FB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1012,7 +1012,9 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        Customers.CustomerID, Persons.PersonType, Persons.Title, Persons.FirstName, Persons.MiddleName, Persons.LastName
+FROM            Customers INNER JOIN
+                         Persons ON Customers.PersonID = Persons.PersonID</property>
                     <property
                       dataType="System.String"
                       description="The variable that contains the SQL command to be executed."
@@ -1029,7 +1031,7 @@
                       dataType="System.Int32"
                       description="Specifies the mode used to access the database."
                       name="AccessMode"
-                      typeConverter="AccessMode">0</property>
+                      typeConverter="AccessMode">2</property>
                     <property
                       dataType="System.String"
                       description="The mappings between the parameters in the SQL command and variables."
@@ -1058,13 +1060,54 @@
                           name="CustomerID"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[PersonID]"
-                          dataType="i4"
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[PersonType]"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[PersonID]"
-                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[PersonID]"
-                          name="PersonID"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[PersonType]"
+                          length="20"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[PersonType]"
+                          name="PersonType"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[Title]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[Title]"
+                          length="8"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[Title]"
+                          name="Title"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[FirstName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                          length="50"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[FirstName]"
+                          name="FirstName"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[MiddleName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[MiddleName]"
+                          length="50"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[MiddleName]"
+                          name="MiddleName"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[LastName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                          length="50"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].Columns[LastName]"
+                          name="LastName"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
@@ -1074,9 +1117,30 @@
                           dataType="i4"
                           name="CustomerID" />
                         <externalMetadataColumn
-                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[PersonID]"
-                          dataType="i4"
-                          name="PersonID" />
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[PersonType]"
+                          dataType="wstr"
+                          length="20"
+                          name="PersonType" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[Title]"
+                          dataType="wstr"
+                          length="8"
+                          name="Title" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                          dataType="wstr"
+                          length="50"
+                          name="FirstName" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[MiddleName]"
+                          dataType="wstr"
+                          length="50"
+                          name="MiddleName" />
+                        <externalMetadataColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                          dataType="wstr"
+                          length="50"
+                          name="LastName" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -1090,10 +1154,35 @@
                           lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[CustomerID]"
                           name="CustomerID" />
                         <outputColumn
-                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[PersonID]"
-                          dataType="i4"
-                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[PersonID]"
-                          name="PersonID" />
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[PersonType]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[PersonType]"
+                          name="PersonType" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[Title]"
+                          dataType="wstr"
+                          length="8"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[Title]"
+                          name="Title" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                          name="FirstName" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[MiddleName]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[MiddleName]"
+                          name="MiddleName" />
+                        <outputColumn
+                          refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                          name="LastName" />
                         <outputColumn
                           refId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -1111,7 +1200,126 @@
                     </output>
                   </outputs>
                 </component>
+                <component
+                  refId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension"
+                  componentClassID="Microsoft.SCD"
+                  contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+                  description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
+                  name="Slowly Changing Dimension"
+                  version="3">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SELECT statement used to create a schema rowset."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
+                      name="CurrentRowWhere"></property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
+                      name="UpdateChangingAttributeHistory">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
+                      name="FailOnFixedAttributeChange">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the column name for the inferred member."
+                      name="InferredMemberIndicator"></property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether inferred member updates are detected."
+                      name="EnableInferredMember">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the transformation fails when a lookup of an existing record fails."
+                      name="FailOnLookupFailure">false</property>
+                    <property
+                      dataType="System.UInt32"
+                      description="Specifies that all rows in the input are new or the transformation detects the change type."
+                      name="IncomingRowChangeType"
+                      typeConverter="IncomingRowChangeType">1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Connections[LookupConnection]"
+                      description="Defines the connection to use for lookups in the dimension table"
+                      name="LookupConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                      name="Slowly Changing Dimension Input">
+                      <externalMetadataColumns
+                        isUsed="True" />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Outputs[Unchanged Output]"
+                      description="Unchanged rows"
+                      exclusionGroup="1"
+                      name="Unchanged Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Outputs[New Output]"
+                      description="New rows"
+                      exclusionGroup="1"
+                      name="New Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Outputs[Fixed Attribute Output]"
+                      description="Rows with changes in columns tagged FixedAttribute"
+                      exclusionGroup="1"
+                      name="Fixed Attribute Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]"
+                      description="These rows contain new information for ChangingAttribute (Type 1) column changes"
+                      exclusionGroup="1"
+                      name="Changing Attribute Updates Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]"
+                      description="HistoricalAttribute (Type 2) changes result in these new rows"
+                      exclusionGroup="2"
+                      name="Historical Attribute Inserts Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]"
+                      description="Information to update unpopulated initial dimension row"
+                      exclusionGroup="1"
+                      name="Inferred Member Updates Output"
+                      synchronousInputId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
               </components>
+              <paths>
+                <path
+                  refId="Package\Load Business Dimensions\Load DimCustomer.Paths[OLE DB Source Output]"
+                  endId="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Load Business Dimensions\Load DimCustomer\Customer.Outputs[OLE DB Source Output]" />
+              </paths>
             </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
@@ -2603,6 +2811,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restrição 1"
       DTS:To="Package\Load Business Dimensions" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restrição 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{3BC60757-249D-4F12-9139-C4DB6B81F5BB}"
+      DTS:From="Package\Foreach SA Create Table Script"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restrição 2"
+      DTS:To="Package\Load Business Dimensions" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
@@ -2615,7 +2831,48 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="226,42"
+          Id="Package\Create Data Mart Database"
+          TopLeft="668.571429994642,105.341176450479" />
+        <NodeLayout
+          Size="234,44"
+          Id="Package\Create Staging Area Database"
+          TopLeft="308.571429228296,104.764705790523" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Foreach DM Create Table Script\Execute DM Script"
+          TopLeft="47.4571445129968,15.7058821954221" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="251,87"
+          Size="251,130"
+          Id="Package\Foreach DM Create Table Script"
+          TopLeft="660.714287120772,189.458823435571" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Foreach SA Create Table Script\Execute SA Script"
+          TopLeft="46.0000007450581,19.2705880087347" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="250,76"
+          Size="250,119"
+          Id="Package\Foreach SA Create Table Script"
+          TopLeft="302.857143501846,191.505882195422" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Load Business Dimensions\Load DimCustomer"
+          TopLeft="57,32" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="269,129"
+          Size="269,172"
+          Id="Package\Load Business Dimensions"
+          TopLeft="439,713" />
         <NodeLayout
           Size="170,42"
           Id="Package\Load Temporal Dimensions\Is DimDate Empty?"
@@ -2655,36 +2912,6 @@
           Size="244,249"
           Id="Package\Load Temporal Dimensions"
           TopLeft="669,402" />
-        <NodeLayout
-          Size="226,42"
-          Id="Package\Create Data Mart Database"
-          TopLeft="668.571429994642,105.341176450479" />
-        <NodeLayout
-          Size="234,44"
-          Id="Package\Create Staging Area Database"
-          TopLeft="308.571429228296,104.764705790523" />
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Foreach DM Create Table Script\Execute DM Script"
-          TopLeft="47.4571445129968,15.7058821954221" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="251,87"
-          Size="251,130"
-          Id="Package\Foreach DM Create Table Script"
-          TopLeft="660.714287120772,189.458823435571" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Foreach SA Create Table Script\Execute SA Script"
-          TopLeft="46.0000007450581,19.2705880087347" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="250,76"
-          Size="250,119"
-          Id="Package\Foreach SA Create Table Script"
-          TopLeft="302.857143501846,191.505882195422" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="426.514286365071,148.764705790523">
@@ -2751,43 +2978,66 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Load Business Dimensions\Load DimCustomer"
-          TopLeft="57,32" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="269,129"
-          Size="269,172"
-          Id="Package\Load Business Dimensions"
-          TopLeft="492,709" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restrição 1]"
           TopLeft="791,651">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-164.5,58"
+              EndConnector="-174,62"
               Start="0,0"
-              End="-164.5,50.5">
+              End="-174,54.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25" />
+                    End="0,32.980044345898" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25"
-                    Point2="0,29"
-                    Point3="-4,29" />
+                    Point1="0,32.980044345898"
+                    Point2="0,36.980044345898"
+                    Point3="-4,36.980044345898" />
                   <mssgle:LineSegment
-                    End="-160.5,29" />
+                    End="-170,36.980044345898" />
                   <mssgle:CubicBezierSegment
-                    Point1="-160.5,29"
-                    Point2="-164.5,29"
-                    Point3="-164.5,33" />
+                    Point1="-170,36.980044345898"
+                    Point2="-174,36.980044345898"
+                    Point3="-174,40.980044345898" />
                   <mssgle:LineSegment
-                    End="-164.5,50.5" />
+                    End="-174,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restrição 2]"
+          TopLeft="427.857143501846,310.505882195422">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="102.142856498154,402.494117804578"
+              Start="0,0"
+              End="102.142856498154,394.994117804578">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,236.068553635103" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,236.068553635103"
+                    Point2="0,240.068553635103"
+                    Point3="4,240.068553635103" />
+                  <mssgle:LineSegment
+                    End="98.142856498154,240.068553635103" />
+                  <mssgle:CubicBezierSegment
+                    Point1="98.142856498154,240.068553635103"
+                    Point2="102.142856498154,240.068553635103"
+                    Point3="102.142856498154,244.068553635103" />
+                  <mssgle:LineSegment
+                    End="102.142856498154,394.994117804578" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2799,6 +3049,57 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Load Business Dimensions\Load DimCustomer">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Load Business Dimensions\Load DimCustomer\Slowly Changing Dimension"
+          TopLeft="60,172" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\Load Business Dimensions\Load DimCustomer\Customer"
+          TopLeft="105,64" />
+        <EdgeLayout
+          Id="Package\Load Business Dimensions\Load DimCustomer.Paths[OLE DB Source Output]"
+          TopLeft="165.75,106">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66"
+              Start="0,0"
+              End="0,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Business Dimensions\Load DimCustomer\Customer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load Temporal Dimensions\Is DimDate Empty?">
     <LayoutInfo>
@@ -2890,31 +3191,6 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Load Temporal Dimensions\Load DimDate\DimDate">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load Business Dimensions\Load DimCustomer">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="124,42"
-          Id="Package\Load Business Dimensions\Load DimCustomer\Customer"
-          TopLeft="82,51" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Business Dimensions\Load DimCustomer\Customer">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

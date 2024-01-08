@@ -23,6 +23,8 @@ BEGIN
 		[SellEndDate] [date] NULL,
 		[CategoryName] [nvarchar](50) NOT NULL,
 		[SubCategoryName] [nvarchar](50) NOT NULL,
+		[EffectiveDate] [datetime] NOT NULL,
+		[ExpiredDate] [datetime] NULL
 		CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED 
 	(
 		ProductNumber ASC

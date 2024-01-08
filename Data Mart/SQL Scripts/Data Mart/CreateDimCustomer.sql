@@ -9,6 +9,8 @@ BEGIN
 		[FirstName] [nvarchar](50) NOT NULL,
 		[MiddleName] [nvarchar](50) NULL,
 		[LastName] [nvarchar](50) NOT NULL,
+		[EffectiveDate] [datetime] NOT NULL,
+		[ExpiredDate] [datetime] NULL
 		CONSTRAINT [PK_DimCard] PRIMARY KEY CLUSTERED 
 	( 
 		[CustomerID] ASC
