@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/8/2024 5:08:20 PM"
@@ -12,7 +12,8 @@
   DTS:LocaleID="2070"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Package1"
-  DTS:VersionGUID="{49538DE9-AF53-48B0-8BED-F88CDECBF8CC}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{66C50E84-7613-49E6-8388-12A25006CCF5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,16 +31,15 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Temp\TrabPratSQL\Utils\DimDate.csv">
+          DTS:ConnectionString="C:\Temp\TrabPratSQL\Data Mart\Utils\DimDate.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_Data"
-              DTS:DTSID="{D2DC8078-AF59-4162-921B-C9301177E2F3}"
+              DTS:DTSID="{3BFC934C-99F2-4AC8-9547-A211900DD75D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,16 +48,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Data_Nome"
-              DTS:DTSID="{4B06DDA1-2259-43C2-B169-4275E8D65718}"
+              DTS:DTSID="{C7CBD7D9-F305-408F-B03F-C107F54C91DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Ano"
-              DTS:DTSID="{E29622A6-63EB-43FE-AC95-A458DCFCB8FA}"
+              DTS:DTSID="{20DF4810-56E6-447B-B01A-D0879B7B8E67}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,16 +65,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Ano_Nome"
-              DTS:DTSID="{E31A6531-AB00-4225-A05B-A1FFBD33C933}"
+              DTS:DTSID="{83F381EF-81FC-43AA-B5C5-ECA04E5C86C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Semestre"
-              DTS:DTSID="{C800792A-FC32-426A-A732-07DBC9F83859}"
+              DTS:DTSID="{A71EA2DE-C75B-4281-9912-28EFCBAC0D82}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,16 +82,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Semestre_Nome"
-              DTS:DTSID="{2F3C6CE0-017C-4D2E-874E-D708A3EA7D20}"
+              DTS:DTSID="{48516696-6803-476D-A414-61CF99F8AC4E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Trimestre"
-              DTS:DTSID="{7BCBB2EC-390E-4411-8823-D5139F3FA49E}"
+              DTS:DTSID="{9F4DB839-176A-4FB0-9414-FCFAAFCDD7C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,16 +99,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Trimestre_Nome"
-              DTS:DTSID="{636BED1B-8A20-480F-9D8E-BECCDCB6AC5A}"
+              DTS:DTSID="{B1766033-851C-4E6A-903F-F6CB67D103E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Quadrimestre"
-              DTS:DTSID="{1CA09041-AABD-473D-A4DE-00CC3C8A89E0}"
+              DTS:DTSID="{C8D470A2-3796-4757-AAAB-B63DC6B2788F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,16 +116,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Quadrimestre_Nome"
-              DTS:DTSID="{B341A9F7-97BD-4449-9CBB-327D434FF1E7}"
+              DTS:DTSID="{DFCD92F4-200C-42CC-8D14-93F24E8AF767}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês"
-              DTS:DTSID="{1EE2F33E-32CA-4E01-A32D-65E0AC2BE6CE}"
+              DTS:DTSID="{1FC33547-915D-4304-BF35-034D3F22A422}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,16 +133,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês_Nome"
-              DTS:DTSID="{750A64B3-2654-4A35-A8C8-DA24BBB0C1CD}"
+              DTS:DTSID="{827AF00B-EF12-45B5-8383-E0B80E181530}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias"
-              DTS:DTSID="{7DD8793F-EAA4-46AD-8912-8F43F48E69AC}"
+              DTS:DTSID="{4F0A3508-04DC-42FD-B0A2-BD6287491E5E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,16 +150,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Nome"
-              DTS:DTSID="{EE5B8E89-4602-4E98-8823-C6081EC15737}"
+              DTS:DTSID="{5903A24E-8B41-40AE-9105-2D412AEC5ED2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Semana"
-              DTS:DTSID="{2DD38EF7-70CB-4141-9395-D7DF72CACB83}"
+              DTS:DTSID="{3E2A2D57-F55F-4118-B5C5-0A5CDD756E26}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,16 +167,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Semana_Nome"
-              DTS:DTSID="{5B0D311B-743E-4320-99A0-B4DE7EB441B3}"
+              DTS:DTSID="{5640D750-6BD8-4D29-A3A6-446FD4430563}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Ano"
-              DTS:DTSID="{61A3F11E-C9D7-46EB-9E60-77A11007AFEB}"
+              DTS:DTSID="{33AF57EA-1555-4B5C-9FF5-1A085B2E892E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,16 +184,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Ano_Nome"
-              DTS:DTSID="{F81BAF43-6ADC-47C9-B8B0-17E02D72555A}"
+              DTS:DTSID="{53E771F9-6448-4424-9D78-B4EB9C554081}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Semestre"
-              DTS:DTSID="{E2F6285A-65A6-4B74-BC38-90D115B695BF}"
+              DTS:DTSID="{B9E2253E-9D60-4098-BBEA-FAEFC0839049}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -210,16 +201,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Semestre_Nome"
-              DTS:DTSID="{9D214F66-F917-49F6-A108-66C67D744547}"
+              DTS:DTSID="{BE2C583C-D1F0-40EB-8CB9-E194DE0FAD6A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Quadrimestre"
-              DTS:DTSID="{99254AF6-C452-4A99-BEA4-395F68758490}"
+              DTS:DTSID="{7569F213-07BC-4F46-AE96-C5B8144A63E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -228,16 +218,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Quadrimestre_Nome"
-              DTS:DTSID="{26B903D7-BC86-4670-B776-F73E69FDFC3A}"
+              DTS:DTSID="{CBA2C49F-9152-466B-B797-A1ED5EB23EF3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Trimestre"
-              DTS:DTSID="{263B20EE-4A42-4AAC-A368-35A2DE779656}"
+              DTS:DTSID="{1DC0287A-3699-4461-9969-3FE8E9FE9140}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -246,16 +235,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Trimestre_Nome"
-              DTS:DTSID="{55FA09B9-7BED-4277-8824-CD58293422F1}"
+              DTS:DTSID="{ACADFAAF-2601-4B8C-A643-0DA4CA3FA9AC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Mês"
-              DTS:DTSID="{636F9CE7-AD58-4C3F-95BA-663D94F82D92}"
+              DTS:DTSID="{7D7608A8-804F-4CD3-BE92-E66FD13EA627}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -264,16 +252,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Mês_Nome"
-              DTS:DTSID="{2F30525D-C3A1-4090-9648-3586615F503E}"
+              DTS:DTSID="{86CB7F33-BA3F-4775-97F9-EE05CB78F095}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_De_Dez_Dias"
-              DTS:DTSID="{0BDBD757-56A6-4726-9269-6021094784FC}"
+              DTS:DTSID="{6E38D6D5-BA8C-484A-8E9E-647BF861CB9B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -282,16 +269,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_De_Dez_Dias_Nome"
-              DTS:DTSID="{1E18DE81-D08E-4E7C-B713-A448657ED06B}"
+              DTS:DTSID="{06908A82-EF2C-4B98-A93E-68D4B2C2CF28}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Da_Semana"
-              DTS:DTSID="{0DAD2ECE-16AE-46A0-91BE-1C6CAA870919}"
+              DTS:DTSID="{2391B14E-31ED-469B-8E25-29B8E35E6A68}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -300,16 +286,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Da_Semana_Nome"
-              DTS:DTSID="{A8C0E445-9CD4-472B-BA72-F178BC6D4C35}"
+              DTS:DTSID="{A3283849-C114-4C89-AAFB-4EF9A91399AD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Semana_Do_Ano"
-              DTS:DTSID="{8E748EAA-DC6E-4260-8F8A-550C8F3D03A5}"
+              DTS:DTSID="{1D42ACFC-6B51-4905-9D95-24C629CCCEFE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -318,16 +303,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Semana_Do_Ano_Nome"
-              DTS:DTSID="{B7ABDEAF-0E8F-4CF3-AA79-DB1ECDED37BC}"
+              DTS:DTSID="{EC155A71-0DE7-409B-BA3A-A931BE5A6A5A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Ano"
-              DTS:DTSID="{EBEA64CE-E949-481A-8CB2-1E1379B9A923}"
+              DTS:DTSID="{28B184BC-E3FD-4F12-B162-D90071F6F1D1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -336,16 +320,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Ano_Nome"
-              DTS:DTSID="{E8C3C214-1439-4EE0-8712-07E40D426B8F}"
+              DTS:DTSID="{BFD43E3C-BD1B-4F32-8E78-D6BB97B6EC50}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Semestre"
-              DTS:DTSID="{667EEBA6-A3B3-4F02-B5A2-A2B6C4D24544}"
+              DTS:DTSID="{CE6C58E7-535A-4F4C-852D-EAD2704ACA8B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -354,16 +337,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Semestre_Nome"
-              DTS:DTSID="{C6F039A9-C97A-4357-88C7-776C07AA3486}"
+              DTS:DTSID="{7CD6CDF4-6C0D-482B-A7B4-982407B4CB67}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Quadrimestre"
-              DTS:DTSID="{B905D678-0EDD-4AD3-AD67-5160B20553FE}"
+              DTS:DTSID="{B2B5CADC-CC46-44D0-954A-4C6E7961D0BE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -372,16 +354,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Quadrimestre_Nome"
-              DTS:DTSID="{1E370EA2-9373-49D1-8F9C-198266B2CF9F}"
+              DTS:DTSID="{8821BA84-B418-41D1-9E8F-042B6D6456E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Trimestre"
-              DTS:DTSID="{B0897796-587B-4E92-95E9-B193E2F8BB7A}"
+              DTS:DTSID="{87168B95-61B7-475A-960A-9589E3AAED3C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -390,16 +371,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Trimestre_Nome"
-              DTS:DTSID="{8A56121F-E2F6-4A52-8D36-7A11D88EE284}"
+              DTS:DTSID="{BDBC85A3-E06C-44C7-B723-20D8DBC69D55}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Mês"
-              DTS:DTSID="{94B942FF-80D4-4320-9FBD-3A856F7F6B99}"
+              DTS:DTSID="{E18A061A-7DF3-4196-9707-C7D419B1819C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -408,16 +388,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dez_Dias_Do_Mês_Nome"
-              DTS:DTSID="{6C4DB700-AE32-4D1C-B6C0-E54B1A17D10F}"
+              DTS:DTSID="{52881EBB-C2FE-4B8E-95E3-191FB0DE6C6A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês_Do_Ano"
-              DTS:DTSID="{4382FF75-CD6E-4AE5-92D3-6D924D5A7F53}"
+              DTS:DTSID="{6D4069D8-15DA-43A2-A781-571A12DF1823}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -426,16 +405,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês_Do_Ano_Nome"
-              DTS:DTSID="{A999FDD2-D418-4120-8214-35264D7BEB86}"
+              DTS:DTSID="{15A901A1-5058-401F-B3D6-0BFDEFF0B0BB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês_Do_Semestre"
-              DTS:DTSID="{A9600A7B-7D6B-475E-9A75-5CA8B6EC3394}"
+              DTS:DTSID="{AF1D0CAA-F9DD-4AC0-9C14-B3DB6AC6BCB3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -444,16 +422,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês_Do_Semestre_Nome"
-              DTS:DTSID="{D732FC3F-6E86-468B-8074-A225848ED451}"
+              DTS:DTSID="{D7699539-E0D5-4651-B5DF-DB4B2E76E3E6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês_Do_Quadrimestre"
-              DTS:DTSID="{9420C3E8-774B-493D-823B-FB2DECC22AE5}"
+              DTS:DTSID="{2B81E962-2FD9-417D-87C2-B16129E71670}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -462,16 +439,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês_Do_Quadrimestre_Nome"
-              DTS:DTSID="{F055EA53-6DC1-4FFB-9E7B-F21819B388DC}"
+              DTS:DTSID="{8D16FF98-69F7-4F1E-B049-7DB2CD3DA10A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês_Do_Trimestre"
-              DTS:DTSID="{B9467175-9ADC-46A1-9809-EF6D89927FAD}"
+              DTS:DTSID="{FA5413CE-5CC8-40DE-A5EB-E9AE10C575B4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -480,16 +456,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Mês_Do_Trimestre_Nome"
-              DTS:DTSID="{DEB3B799-8555-468E-8650-6397B924FF6E}"
+              DTS:DTSID="{BC63563B-A7BC-4DF5-97D9-D5B3C374CE4A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Trimestre_Do_Ano"
-              DTS:DTSID="{CF697B79-33E0-4C41-AA3F-68E0ECEAF162}"
+              DTS:DTSID="{7D47990E-D779-4960-B915-420AE5B64332}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -498,16 +473,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Trimestre_Do_Ano_Nome"
-              DTS:DTSID="{933E64B7-40A4-45AF-A36C-5C46E64B30A9}"
+              DTS:DTSID="{3426FD56-8932-4B2D-8E6D-13E11B49FE96}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Trimestre_Do_Semestre"
-              DTS:DTSID="{78293FF5-4866-4CE6-A823-4017A25DB1DE}"
+              DTS:DTSID="{29EB70A5-80D2-4323-9FD8-C14C39A22AC8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -516,16 +490,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Trimestre_Do_Semestre_Nome"
-              DTS:DTSID="{345BFA28-9AEF-4F06-897F-F815C2ADEF07}"
+              DTS:DTSID="{52ED7B87-6709-4B22-A18E-6881B54CE69B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Quadrimestre_Do_Ano"
-              DTS:DTSID="{D03900AD-17E9-46D6-8C16-31794A05E93B}"
+              DTS:DTSID="{20835A7E-D68A-4F44-8ED5-BA9D56F06009}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -534,16 +507,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Quadrimestre_Do_Ano_Nome"
-              DTS:DTSID="{EE4A5ED0-5B9E-4F23-89EB-A676D71F62C0}"
+              DTS:DTSID="{AE10C00E-EDDE-46E8-ADB4-BF2E6C98F8E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Semestre_Do_Ano"
-              DTS:DTSID="{ABA1FDDE-0E69-4239-AC1E-A9FD5E5115DD}"
+              DTS:DTSID="{12041324-1B6D-4832-A088-7EA768D0DC94}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -552,16 +524,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Semestre_Do_Ano_Nome"
-              DTS:DTSID="{4DB127A5-7167-4427-ABD1-4C3CB6E6C116}"
+              DTS:DTSID="{8B9DFA2C-6E4A-46BE-A634-1D0A46EC4801}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Ano_ISO_8601"
-              DTS:DTSID="{7A07A06F-A8E5-4521-B9F0-C39752CEE731}"
+              DTS:DTSID="{E83C0CFB-DB0E-4078-B6D5-27341A2A9EA8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -570,16 +541,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Ano_ISO_8601_Nome"
-              DTS:DTSID="{2AE1BF77-1E3B-4DAC-B7E7-3929ADBCE2E6}"
+              DTS:DTSID="{2568381B-B9E5-46C7-93ED-BA88F81026FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Semana_ISO_8601"
-              DTS:DTSID="{C49F2327-1DD8-434F-9192-F8E3A6F4696A}"
+              DTS:DTSID="{5864C371-A6B8-403B-8F4E-4F8E9EE8ACD5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -588,16 +558,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Semana_ISO_8601_Nome"
-              DTS:DTSID="{58CFA771-F514-4094-A926-435D3CA4E4F0}"
+              DTS:DTSID="{DB1B41FC-4C20-4E55-A04E-597BBA8DAA31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="30"
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_ISO_8601"
-              DTS:DTSID="{0675B340-EF56-4E21-9BD2-7E41274BDAA8}"
+              DTS:DTSID="{432A76A0-577C-4D93-BF60-B67A1517FEA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -606,16 +575,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_ISO_8601_Nome"
-              DTS:DTSID="{EE5BBF1A-CAA2-43B0-B838-9CF89E82595B}"
+              DTS:DTSID="{8E3F4488-880E-402B-9D0E-29DA4D649E64}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Ano_ISO_8601"
-              DTS:DTSID="{A761F76D-B49D-4F81-A244-B8F00DC6D7AB}"
+              DTS:DTSID="{267A0D27-682F-420E-8D98-1290DF54934A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -624,16 +592,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Do_Ano_ISO_8601_Nome"
-              DTS:DTSID="{B88D29AA-C09A-4C79-B87A-0664360EF096}"
+              DTS:DTSID="{492D45D3-4C71-4E6D-BCDC-830F6DA8F9EB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Da_Semana_ISO_8601"
-              DTS:DTSID="{0F653D24-5C5C-45BD-9BAA-25146C06D568}"
+              DTS:DTSID="{6B36833C-D373-486A-A6D4-B2D50A165491}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -642,16 +609,15 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dia_Da_Semana_ISO_8601_Nome"
-              DTS:DTSID="{AAF21E86-66D1-4706-952A-2686D3FD018B}"
+              DTS:DTSID="{115EB63B-C808-4C8A-BE51-F2AE14C526A8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="11"
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Semana_Do_Ano_ISO_8601"
-              DTS:DTSID="{DA323645-24A7-4FFD-A169-72CCCCCA9190}"
+              DTS:DTSID="{2EA11DC3-A1DB-4530-8D89-7D7F06CBD5B2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -660,7 +626,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Semana_Do_Ano_ISO_8601_Nome"
-              DTS:DTSID="{EF2767AC-E071-465F-9DFB-8F2F0FD2880B}"
+              DTS:DTSID="{C9026D3D-5AD8-4EEF-A3A2-B82DE7D87DA9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -712,10 +678,10 @@
                   description="Specifies whether the data will overwrite or append to the destination file."
                   name="Overwrite">true</property>
                 <property
-                  dataType="System.String"
+                  dataType="System.Null"
                   description="Specifies the text to write to the destination file before any data is written."
                   expressionType="Notify"
-                  name="Header"></property>
+                  name="Header" />
                 <property
                   dataType="System.Boolean"
                   description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
@@ -2976,4 +2942,62 @@
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
+<!--Se você editar manualmente esta seção e cometer algum erro, poderá excluí-la. -->
+<!--O pacote ainda poderá ser carregado normalmente, mas as informações de layout anteriores serão perdidas e o designer reorganizará automaticamente os elementos na superfície de design.-->
+<Objects
+  Version="8">
+  <!--Cada nó abaixo conterá propriedades que não afetam o comportamento em tempo de execução.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="194,42"
+          Id="Package\Tarefa Fluxo de Dados 1"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tarefa Fluxo de Dados 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Tarefa Fluxo de Dados 1\Destino - DimDate_csv"
+          TopLeft="5.50000000000001,107.5" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Tarefa Fluxo de Dados 1\Origem - DimDate"
+          TopLeft="16.5,5.5" />
+        <EdgeLayout
+          Id="Package\Tarefa Fluxo de Dados 1.Paths[OLE DB Source Output]"
+          TopLeft="98.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
